@@ -1,0 +1,92 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#coastalstorm {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#earthquake {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#fire {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#flood {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#hurricane {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#severestorm {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#snow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#tornado {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#volcano {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.state {
+    padding: 5px;
+    min-height: 185px;
+    text-align: center;
+    flex: 1 0 34%;
+    display: none;
+}
+
+.state.active {
+    display: block;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
