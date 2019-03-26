@@ -12,7 +12,7 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet"><!-- Your styles should be called here -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,78 +23,175 @@
   </head>
 
   <body>
+    <div class="">
+      <div class="checkbox">
+        <form id='tablet-checkbox'>
+          <h2>Natural Disasters by Type</h2>
+          <div class="">Number of Natural Disasters Nationwide: <span></span></div>
+          <p>
+            Select the type of natural disaster to see in which states they occurred in 2018:
+          </p>
+          <input type="checkbox" id="all" value="All" data-price="" data-discount="" checked>
+          <label for="All">All</label>
+          <input type="checkbox" id="coastal_storm" value="Coastal Storm" data-price="" data-discount="">
+          <label for="Coastal Storm">Coastal Storm</label>
+          <input type="checkbox" id="earthquake" value="Earthquake" data-price="" data-discount="">
+          <label for="Earthquake"> Earthquake</label>
+          <input type="checkbox" id="fire" value="Fire" data-price="" data-discount="">
+          <label for="Fire">Fire</label>
+          <input type="checkbox" id="flood" value="Flood" data-price="" data-discount="">
+          <label for="Flood">Flood</label>
+          <input type="checkbox" id="hurricane" value="Hurricane" data-price="" data-discount="">
+          <label for="Hurricane">Hurricane</label>
+          <input type="checkbox" id="mud" value="Mud/Landslide" data-price="" data-discount="">
+          <label for="Mud/Landslide">Mud/Landslide</label>
+          <input type="checkbox" id="severe_storm" value="Severe Storm" data-price="" data-discount="">
+          <label for="Severe Storm">Severe Storm</label>
+          <input type="checkbox" id="snow" value="Snow" data-price="" data-discount="">
+          <label for="Snow">Snow</label>
+          <input type="checkbox" id="tornado" value="Tornado" data-price="" data-discount="">
+          <label for="Tornado">Tornado</label>
+          <input type="checkbox" id="volcano" value="Volcano" data-price="" data-discount="">
+          <label for="Volcano">Volcano</label>
+        </form>
+      </div>
 
-    <div class="state earthquake flood active">
-      <h3>AK</h3>
-    </div>
+      <div class="state earthquake flood active">
+        <h3>AK</h3>
+      </div>
 
-    <div class="state hurricane severestorm active">
-      <h3>AL</h3>
-    </div>
+      <div class="state hurricane severe_storm active">
+        <h3>AL</h3>
+      </div>
 
-    <div class="state flood severestorm active">
-      <h3>AZ</h3>
-    </div>
+      <div class="state flood severe_storm active">
+        <h3>AZ</h3>
+      </div>
 
-    <div class="state fire active">
-      <h3>CA</h3>
-    </div>
+      <div class="state fire active">
+        <h3>CA</h3>
+      </div>
 
-    <div class="state severestorm tornado active">
-      <h3>CT</h3>
-    </div>
+      <div class="state severe_storm tornado active">
+        <h3>CT</h3>
+      </div>
 
-    <div class="state hurricane active">
-      <h3>FL</h3>
-    </div>
+      <div class="state hurricane active">
+        <h3>FL</h3>
+      </div>
 
-    <div class="state hurricane active">
-      <h3>GA</h3>
-    </div>
+      <div class="state hurricane active">
+        <h3>GA</h3>
+      </div>
 
-    <div class="state flood hurricane volcano active">
-      <h3>HI</h3>
-    </div>
+      <div class="state flood hurricane volcano active">
+        <h3>HI</h3>
+      </div>
 
-    <div class="state severestorm active">
-      <h3>IA</h3>
-    </div>
+      <div class="state severe_storm active">
+        <h3>IA</h3>
+      </div>
 
-    <div class="state flood active">
-      <h3>IN</h3>
-    </div>
+      <div class="state flood active">
+        <h3>IN</h3>
+      </div>
 
-    <div class="state severestorm active">
-      <h3>KS</h3>
-    </div>
+      <div class="state severe_storm active">
+        <h3>KS</h3>
+      </div>
 
-    <div class="state flood active">
-      <h3>KY</h3>
-    </div>
+      <div class="state flood active">
+        <h3>KY</h3>
+      </div>
 
-    <div class="state coastalstorm snow active">
-      <h3>MA</h3>
-    </div>
+      <div class="state coastal_storm snow active">
+        <h3>MA</h3>
+      </div>
 
-    <div class="state flood severestorm active">
-      <h3>MD</h3>
-    </div>
+      <div class="state flood severe_storm active">
+        <h3>MD</h3>
+      </div>
 
-    <div class="state coastalstorm active">
-      <h3>ME</h3>
-    </div>
+      <div class="state coastal_storm active">
+        <h3>ME</h3>
+      </div>
 
-    <div class="state flood active">
-      <h3>MI</h3>
-    </div>
+      <div class="state flood active">
+        <h3>MI</h3>
+      </div>
 
-    <div class="state flood active">
-      <h3>MN</h3>
-    </div>
-    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <div class="state flood active">
+        <h3>MN</h3>
+      </div>
 
-    <!-- Your javascript should be called here -->
+      <div class="state severe_storm active">
+        <h3>MS</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>MT</h3>
+      </div>
+      ​
+      <div class="state hurricane severe_storm active">
+        <h3>NC</h3>
+      </div>
+      ​
+      <div class="state coastal_storm snow active">
+        <h3>NH</h3>
+      </div>
+      ​
+      <div class="state severe_storm active">
+        <h3>NJ</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>NY</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>OH</h3>
+      </div>
+      ​
+      <div class="state fire active">
+        <h3>OK</h3>
+      </div>
+      ​
+      <div class="state severe_storm active">
+        <h3>PA</h3>
+      </div>
+      ​
+      <div class="state hurricane active">
+        <h3>SC</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>TX</h3>
+      </div>
+      ​
+      <div class="state hurricane active">
+        <h3>VA</h3>
+      </div>
+      ​
+      <div class="state severe_storm active">
+        <h3>VT</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>WA</h3>
+      </div>
+      ​
+      <div class="state flood active">
+        <h3>WI</h3>
+      </div>
+      ​
+      <div class="state mud severe_storm active">
+        <h3>WV</h3>
+      </div>
+
+      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Your javascript should be called here -->
   </body>
 
 </html>

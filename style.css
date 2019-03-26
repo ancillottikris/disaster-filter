@@ -13,66 +13,75 @@ html, body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 5px;
 }
 
-#coastalstorm {
+/*
+.coastal_storm {
     display: flex;
     flex-flow: row wrap;
 }
 
-#earthquake {
+.earthquake {
     display: flex;
     flex-flow: row wrap;
 }
 
-#fire {
+.fire {
     display: flex;
     flex-flow: row wrap;
 }
 
-#flood {
+.flood {
     display: flex;
     flex-flow: row wrap;
 }
 
-#hurricane {
+.hurricane {
     display: flex;
     flex-flow: row wrap;
 }
 
-#severestorm {
+.mud {
     display: flex;
     flex-flow: row wrap;
 }
 
-#snow {
+.severe_storm {
     display: flex;
     flex-flow: row wrap;
 }
 
-#tornado {
+.snow {
     display: flex;
     flex-flow: row wrap;
 }
 
-#volcano {
+.tornado {
     display: flex;
     flex-flow: row wrap;
 }
 
+.volcano {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.state.active {}
+*/
 .state {
-    padding: 5px;
-    min-height: 185px;
-    text-align: center;
+    padding: 20px;
     flex: 1 0 34%;
-    display: none;
-}
-
-.state.active {
-    display: block;
+    display: inline-block;
+    background-color: gray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 132px;
+    height: 132px;
+    margin: 10px;
+    text-align: center;
 }
 
 /*********************************************************************
