@@ -15,6 +15,10 @@ html, body {
     background-color: #BBB3AC;
 }
 
+p {
+    line-height: 1.2em;
+}
+
 .container {
     max-width: 650px;
     margin: 0 auto;
@@ -27,12 +31,19 @@ h2 {
 }
 
 img {
-    width: 100%
+    width: 100%;
+}
+
+.topImg {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .caption {
     color: #737373;
     font-size: 14px;
+    font-style: italic;
+    padding: 0 10px;
 }
 
 .captionbyline {
