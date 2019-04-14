@@ -142,6 +142,17 @@ img {
     display: block;
 }
 
+/*Special Rules for Mobile*/
+@media only screen and (max-width: 728px) {
+    #mobile {
+        display: block
+    }
+
+    #desktop {
+        display: none
+    }
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
@@ -158,6 +169,10 @@ img {
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
 @media(min-width: 729px) {
+    #mobile {
+        display: none
+    }
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
 }
