@@ -25,8 +25,13 @@ p {
     padding: 5px;
 }
 
-h2 {
+h1 {
     font-size: 34px;
+    color: #2E3B43;
+}
+
+h2 {
+    font size: 28px;
     color: #2E3B43;
 }
 
@@ -50,6 +55,10 @@ img {
     color: #737373;
     font-style: italic;
     font-size: 12px;
+}
+
+.byline {
+    font-weight: bold;
 }
 
 /* other colors salmonish CC9887 green 7D7E70 */
