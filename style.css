@@ -133,7 +133,9 @@ img {
 
 .state {
     padding: 20px;
-    background-color: #8F756F;
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #b23400;
     box-sizing: border-box;
     border-radius: 10px;
     /* width: 132px; */
@@ -141,6 +143,10 @@ img {
     margin: 10px;
     text-align: center;
     display: none;
+    text-transform: uppercase;
+    color: #b23400;
+    font-size: 15px;
+    /* vertical-align: middle; */
 }
 
 .state.active {
