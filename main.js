@@ -1,7 +1,7 @@
 $("body").on("change", "input[name='toggle']", function (e) {
-	let className = $("input[name='toggle']:checked").attr("id");
+	let disaster = $("input[name='toggle']:checked").attr("id");
 
-	let selection = $(`.${className}`);
+	let selection = $(`.${disaster}`);
 
 	// $("input[type='checkbox']:checked").each(function () {
 	// 	const $this_checkbox = $(this),
@@ -16,6 +16,8 @@ $("body").on("change", "input[name='toggle']", function (e) {
 
 	$(".state.active").removeClass("active");
 	$(selection).addClass("active");
+
+	disaster_toggle(disaster);
 
 	console.log("We made it!");
 	// console.log("state name" + state_name)

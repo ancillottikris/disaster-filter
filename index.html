@@ -10,6 +10,7 @@
     <title>2018 Natural Disasters in the US</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <link href="style.css" rel="stylesheet">
     <!-- Your styles should be called here -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -69,7 +70,7 @@
 
       <p>Overall, there were 59 natural disaster declarations across 33 states in 2018. Use the filter below to see where these disasters occurred and what type of weather emergency affected each state. </p>
 
-      <div class="radio filter">
+      <!-- <div class="radio filter">
         <form id='tablet-radio'>
           <h2>Natural Disasters Across the US</h2>
           <div class="check_grid">
@@ -99,7 +100,7 @@
               <label for="Volcano">Volcano</label></div>
           </div>
         </form>
-      </div>
+      </div> -->
       <div class="states">
         <div class="state earthquake flood active">
           <h3>Alaska</h3>
@@ -201,6 +202,45 @@
           <h3>West Virginia</h3>
         </div>
       </div>
+    </div>
+    <div id="mapContainer">
+      <div id="filters">
+        <div class="radio filter">
+          <form id='tablet-radio'>
+            <h2>Natural Disasters Across the US</h2>
+            <div class="check_grid">
+              <div></div>
+              <div><input type="radio" id="state" value="All" name="toggle" data-price="" data-discount="" checked>
+                <label for="All">All</label></div>
+              <div> </div>
+              <div><input type="radio" id="coastal_storm" value="Coastal Storm" name="toggle" data-price="" data-discount="">
+                <label for="Coastal Storm">Coastal Storm</label></div>
+              <div><input type="radio" id="earthquake" value="Earthquake" name="toggle" data-price="" data-discount="">
+                <label for="Earthquake"> Earthquake</label></div>
+              <div><input type="radio" id="fire" value="Fire" name="toggle" data-price="" data-discount="">
+                <label for="Fire">Fire</label></div>
+              <div><input type="radio" id="flood" value="Flood" name="toggle" data-price="" data-discount="">
+                <label for="Flood">Flood</label></div>
+              <div><input type="radio" id="hurricane" value="Hurricane" name="toggle" data-price="" data-discount="">
+                <label for="Hurricane">Hurricane</label></div>
+              <div><input type="radio" id="mud" value="Mud/Landslide" name="toggle" data-price="" data-discount="">
+                <label for="Mud/Landslide">Mud/Landslide</label></div>
+              <div><input type="radio" id="severe_storm" value="Severe Storm" name="toggle" data-price="" data-discount="">
+                <label for="Severe Storm">Severe Storm</label></div>
+              <div><input type="radio" id="snow" value="Snow" data-price="" name="toggle" data-discount="">
+                <label for="Snow">Snow</label></div>
+              <div><input type="radio" id="tornado" value="Tornado" name="toggle" data-price="" data-discount="">
+                <label for="Tornado">Tornado</label></div>
+              <div><input type="radio" id="volcano" value="Volcano" name="toggle" data-price="" data-discount="">
+                <label for="Volcano">Volcano</label></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id='map'></div>
+    </div>
+
+    <div class="container">
 
       <p>When rebuilding after natural disasters, "More money was often spent on the repairs than the properties themselves were actually worth," said McCardle.
       </p>
@@ -231,8 +271,11 @@
     </div>
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
     <!-- Your javascript should be called here -->
     <script src="main.js"></script>
+    <script src="map.js"></script>
   </body>
 
 </html>

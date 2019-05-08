@@ -153,6 +153,30 @@ img {
     display: block;
 }
 
+#mapContainer {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#filters {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20%;
+    z-index: 2;
+    color: #FFF;
+}
+
 /*Special Rules for Mobile*/
 @media only screen and (max-width: 728px) {
     #mobile {
