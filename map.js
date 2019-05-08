@@ -70,18 +70,17 @@ map.on("load", () => {
 	});
 
 	map.addLayer({
-		"id": "states-fill-earthquakes",
-		"type": "fill",
+		"id": "states-line-flood",
+		"type": "line",
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "#539032",
-			"fill-opacity": 0.5
+			"line-color": "#ffffff",
 		},
 		'layout': {
 			'visibility': 'none'
 		},
-		filter: ['boolean', ["get", "Earthquake"]]
+		filter: ['boolean', ["get", "Flood"]]
 	});
 
 	map.addLayer({
@@ -105,11 +104,242 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"line-color": "#12222b",
+			"line-color": "#ffffff",
 		},
 		'layout': {
 			'visibility': 'none'
 		},
 		filter: ['boolean', ["get", "Hurricane"]]
+	});
+	map.addLayer({
+		"id": "states-fill-fire",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "red",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Fire"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-fire",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Fire"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-earthquake",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "#539032",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Earthquake"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-earthquake",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Earthquake"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-coastal_storm",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "#1583c1",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Coastal Storm"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-coastal_storm",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Coastal Storm"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-mud",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "brown",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Mud/Landslide"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-mud",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Mud/Landslide"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-severe_storm",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "blue",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Severe Storm(s)"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-severe_storm",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Severe Storm(s)"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-snow",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "gray",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Snow"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-snow",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Snow"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-tornado",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "navy",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Tornado"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-tornado",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Tornado"]]
+	});
+
+	map.addLayer({
+		"id": "states-fill-volcano",
+		"type": "fill",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"fill-color": "red",
+			"fill-opacity": 0.5
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Volcano"]]
+	});
+
+	map.addLayer({
+		"id": "states-line-volcano",
+		"type": "line",
+		"source": "disasterData",
+		"source-layer": "finalDataWithStates-8dm4f6",
+		"paint": {
+			"line-color": "#ffffff",
+		},
+		'layout': {
+			'visibility': 'none'
+		},
+		filter: ['boolean', ["get", "Volcano"]]
 	});
 });
