@@ -39,7 +39,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "#b8b6b7",
+			"fill-color": "#",
 			"fill-opacity": 0.5
 		}
 	});
@@ -60,7 +60,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "#ff69b4",
+			"fill-color": "#5EA4BF",
 			"fill-opacity": 0.5
 		},
 		'layout': {
@@ -89,7 +89,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "#1583c1",
+			"fill-color": "#174d71",
 			"fill-opacity": 0.5
 		},
 		'layout': {
@@ -117,7 +117,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "red",
+			"fill-color": "#d93d04",
 			"fill-opacity": 0.5
 		},
 		'layout': {
@@ -233,7 +233,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "blue",
+			"fill-color": "#37748C",
 			"fill-opacity": 0.5
 		},
 		'layout': {
@@ -291,7 +291,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "navy",
+			"fill-color": "#bf996b",
 			"fill-opacity": 0.5
 		},
 		'layout': {
@@ -320,7 +320,7 @@ map.on("load", () => {
 		"source": "disasterData",
 		"source-layer": "finalDataWithStates-8dm4f6",
 		"paint": {
-			"fill-color": "red",
+			"fill-color": "#f2620f",
 			"fill-opacity": 0.5
 		},
 		'layout': {

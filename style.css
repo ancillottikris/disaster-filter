@@ -162,16 +162,16 @@ img {
 #map {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5%;
     height: 100%;
-    width: 100%;
+    width: 90%;
     z-index: 1;
 }
 
 #filters {
     position: absolute;
     bottom: 5%;
-    right: 6%;
+    right: 11%;
     width: 20%;
     z-index: 2;
     color: #FFF;
